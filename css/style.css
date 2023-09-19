@@ -19,7 +19,7 @@
   #event-subscription {
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 70vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -207,8 +207,7 @@
 
 /* Estilo para o formulário de inscrição do evento */
 #event-subscription {
-  background: rgb(90,92,108);
-  background: linear-gradient(90deg, rgba(90,92,108,1) 0%, rgba(90,92,108,1) 50%, #fcb045 100%);   /* Estilo de fundo com imagem */
+  background-image: url(../img/fundo-abstrato-com-design-baixo-poli_1048-8478.png);
       
   background-position: center;
   background-size: cover;
@@ -216,7 +215,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--text-color);
+  
   
 }
 
