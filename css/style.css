@@ -2,7 +2,7 @@
 :root{
 
     --primary: #00baf2;
-    --secondary: #95989a;
+    --secondary: #8a8a8a;
     --text-color: #fff;
     --text-secondary: #000;
     --text-tertiary: #5d5d5d;
@@ -127,7 +127,7 @@
   }
   .nav{
     align-self: baseline;
-    margin-top: 10px;
+    margin-top: 10px;       
   }
   .nav-p {
     margin: 0px;
@@ -137,19 +137,21 @@
     color: rgb(21, 193, 227);
   }
   .nav-item{
-    margin-right: 0.3rem;
+    margin-right: 0.2rem;
   }
   
   /* Benefits section */
   #key-benefits{
-    background:#f4efef ;
-  }
+    background:#cbcbcc ;
+    border-radius: 22px;
+    box-shadow: 12px 12px 2px black;
+    }
 
   #key-benefits h2 {
-    background-color: var(--secondary);
     text-align: center;
     padding: 2em;
-    font-weight: 500;
+    font-weight: 900;
+    background-color: red;
   }
   
   .benefits {
@@ -166,7 +168,7 @@
     flex-direction: column;
     align-items: center;
     max-width: 20%;
-    color: var(--text-tertiary);
+    
   }
   
   .benefit .benefit-img {
@@ -178,9 +180,7 @@
     margin-bottom: 1em;
   }
   
-  #benefit-1 {
-    background-image: url("../img/DreamShaper_v7_aplicaes_web_2.jpg");
-  }
+
   
   #benefit-2 {
     background-image: url("../img/DreamShaper_v7_imagens_para_colocar_em_landing_page_de_venda_d_2.jpg");
@@ -189,14 +189,15 @@
   #benefit-3 {
     background-image: url("../img/images.png");
   }
+
+  #benefit-4 {
+    background-image: url("../img/Default_imagens_de_fundo_para_colocar_em_site_de_venda_de_web_1.jpg");
+  }
   
-  /* Event location */
-  #location {
-    height: 400px;
-    background: rgb(252,176,69);
-    background: linear-gradient(90deg, rgba(252,176,69,1) 0%, rgba(90,92,108,1) 26%, rgba(93,94,107,1) 49%, rgba(90,92,108,1) 50%, rgba(90,92,108,1) 100%);
+ 
+    
   
-}
+
 
 /* Estilo global para resetar margens e paddings */
 * {
@@ -331,6 +332,12 @@
   color: var(--text-tertiary);
 }
 
+.benefit p:hover{
+  color: #000;
+  scale: 1.1;
+  font-weight: bold;
+}
+
 .benefit .benefit-img {
   width: 250px;
   height: 250px;
@@ -355,42 +362,25 @@
 /* Localização do evento */
 #location {
   height: 400px;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-      url("../img/Default_startup_de_vendas_de_websites_3.jpg");
+  background-color: #5d5d5d;
   background-position: center;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  color: var(--text-color);
   margin-bottom: 3em;
 }
 
 #address,
 #about-location {
-  max-width: 30%;
-}
-
-#address {
-  display: flex;
-}
-
-#address i {
-  color: var(--primary);
-  font-size: 4em;
-  margin-right: 0.5em;
-}
-
-#address-details {
-  text-align: center;
-  font-size: 1.3em;
+  max-width: 80%;
 }
 
 #about-location h3 {
-  color: var(--primary);
-  font-size: 2.5em;
-  margin-bottom: 1em;
+  text-shadow: 12px 10px 15px black;
+  font-size: 105px;
   text-transform: uppercase;
+  color: #000;
 }
 
 #about-location p {
