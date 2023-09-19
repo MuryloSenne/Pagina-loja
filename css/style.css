@@ -68,7 +68,7 @@
     background-color: var(--secondary);
     padding: 2em;
     max-width: 22%;
-    background-color: rgb(115, 118, 118) ;
+    background-color: rgb(115, 116, 118) ;
     border-radius: 20px;
     opacity: 83%;
   }
@@ -89,7 +89,10 @@
   .form-group {
     display: flex;
     flex-direction: column;
-    margin-bottom: 0.8em;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+    
+    
+    
   }
   
  
@@ -97,8 +100,10 @@
     color: var(--text-tertiary);
     margin-bottom: 0.3em;
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color: rgb(229 229 229);
     text-transform: uppercase;
+    padding-left: 0.2rem;
+    
   }
   
   .form-group input,
@@ -108,6 +113,12 @@
     border: none;
     outline: none;
 
+  }
+
+  .form-principal {
+    box-shadow: 0px 0px 20px rgba(32, 3, 254, 0.9);
+    border-radius: 5px;
+    
   }
   
  
@@ -120,6 +131,7 @@
     cursor: pointer;
     opacity: 0.8;
     border-radius:10px ;
+    
   }
   
   .btn:hover {
@@ -249,11 +261,11 @@
 }
 
 #subscription-form {
-  background-color: var(--secondary);
   padding: 2em;
   max-width: 22%;
-  background-color: rgb(115, 118, 118);
-  border-radius: 20px;
+  width: 50%;
+  background-color: midnightblue;
+  border-radius: 10px;
   opacity: 83%;
 }
 
@@ -276,8 +288,9 @@
   color: var(--text-tertiary);
   margin-bottom: 0.3em;
   font-weight: bold;
-  color: rgb(0, 0, 0);
+  color: rgb(209, 206, 206);
   text-transform: uppercase;
+  padding-left: 0.5rem;
 }
 
 .form-group input,
@@ -662,7 +675,8 @@ body {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+  height: 500px;
 
 }
 
@@ -681,6 +695,8 @@ h2 {
 
 label {
   font-weight: bold;
+  padding-left: 10px;
+  margin: 5px;
 }
 
 input[type="text"],
@@ -718,16 +734,33 @@ input[type="submit"]:hover {
 }
 
 
+
+
 #login_byte{
   opacity: 90%;
-  background-image: url("../img/teste01.jpg");
+  background-image: url("../img/Web_development_-_Main.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh; /* Isso define a altura da seção para cobrir 100% da altura da tela */
   align-items: center;
   color: var(--text-color);
-  
+
+}
+
+.form-byte{
+  height: 410px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 20px rgba(16, 3, 28, 10);
+  border-radius: 5px;
+}
+
+.form-login{
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 50);
+  margin: 10px;
+  border-radius: 5px;
 }
 
 

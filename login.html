@@ -14,11 +14,13 @@
         <div class="login-container">
             <h2 class="text-light">Login</h2>
             <div class="form-byte">
-                <form action="login.php" method="post">
-                    <label for="username" class="text-light">Nome de Usuário:</label>
-                    <input type="text" id="username" name="username" required placeholder="Digite seu nome"><br><br>
+                <form action="login.php" method="post" class="form-login">
+                    <label for="username" class="text-light login">Nome de Usuário:</label>
+                    <input type="text" id="username" name="username" required placeholder="Digite seu nome"><br>
+            
                     <label for="password" class="text-light">Senha:</label>
-                    <input type="password" id="password" name="password" required placeholder="Digite sua senha"><br><br>    
+                    <input type="password" id="password" name="password" required placeholder="Digite sua senha"><br><br>   
+    
                     <button class="btnLogin" type="submit"> 
                         <div class="loadingEntrar">entrar</div>
                         <div class="loadingLogin"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="white" stroke-dasharray="15" stroke-dashoffset="15" stroke-linecap="round" stroke-width="2" d="M12 3C16.9706 3 21 7.02944 21 12"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="15;0"/><animateTransform attributeName="transform" dur="1.5s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"/></path></svg></div>

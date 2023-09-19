@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-<?php
 
-echo "<pre>";
-var_dump($_POST);
-echo "<pre>";
-=======
 <!DOCTYPE html>
 <html>
 
@@ -71,6 +65,4 @@ echo "<pre>";
     })
     </script>
 </body>
-
 </html>
->>>>>>> 4e65511d6332ccdca5c3f44b0f5fb4e9ca9c6c38
