@@ -17,8 +17,6 @@
   
   /* Event form */
   #event-subscription {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-      url("../img/Default_startup_de_vendas_de_websites_1.jpg");
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -35,10 +33,18 @@
   }
   
   #disclaimer h2 {
+    margin-right: 500px;
     font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: -5px;
     margin-bottom: 1em;
   }
   
+  #disclaimer h2 span{
+    color: #fcb045;
+    
+  }
+
   #disclaimer .about-event {
     font-size: 2em;
     text-transform: uppercase;
@@ -48,12 +54,14 @@
   }
   
   #disclaimer p {
+    margin-right: 450px;
     font-size: 1.2em;
     margin-bottom: 0.3em;
   }
   
   #disclaimer .event-date {
     font-weight: bold;
+    color: #00baf2;
   }
   
   #subscription-form {
@@ -133,6 +141,10 @@
   }
   
   /* Benefits section */
+  #key-benefits{
+    background:#f4efef ;
+  }
+
   #key-benefits h2 {
     background-color: var(--secondary);
     text-align: center;
@@ -181,14 +193,9 @@
   /* Event location */
   #location {
     height: 400px;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
-  --primary: #00baf2;
-  --secondary: #95989a;
-  --text-color: #fff;
-  --text-secondary: #000;
-  --text-tertiary: #5d5d5d;
-  --bg-form: #c4e0e3;
-  --text-p: rgb(68, 120, 211);
+    background: rgb(252,176,69);
+    background: linear-gradient(90deg, rgba(252,176,69,1) 0%, rgba(90,92,108,1) 26%, rgba(93,94,107,1) 49%, rgba(90,92,108,1) 50%, rgba(90,92,108,1) 100%);
+  
 }
 
 /* Estilo global para resetar margens e paddings */
@@ -200,9 +207,9 @@
 
 /* Estilo para o formulário de inscrição do evento */
 #event-subscription {
-  /* Estilo de fundo com imagem */
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-      url("../img/Default_startup_de_vendas_de_websites_1.jpg");
+  background: rgb(90,92,108);
+  background: linear-gradient(90deg, rgba(90,92,108,1) 0%, rgba(90,92,108,1) 50%, #fcb045 100%);   /* Estilo de fundo com imagem */
+      
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -237,6 +244,7 @@
 }
 
 #disclaimer .event-date {
+  color: #00baf2;
   font-weight: bold;
 }
 
@@ -444,6 +452,7 @@
 .detail-description ul li:last-child {
   font-weight: bold;
 }
+
 /* Seção de Chamada para Ação (Call to Action) */
 #cta {
   height: 300px;
@@ -778,6 +787,7 @@ input[type="submit"]:hover {
   text-decoration: none;
   text-transform: none;
 }
+
 
 
 
