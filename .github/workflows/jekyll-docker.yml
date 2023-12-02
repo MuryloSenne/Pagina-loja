@@ -14,12 +14,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Build the site in the jekyll/builder container
-      run: |
-        docker run --rm \
-          --volume="$PWD:/srv/jekyll" \
-          -it jekyll/builder:latest \
-          jekyll build
+  
 
     - name: Install dependencies
       run: |
