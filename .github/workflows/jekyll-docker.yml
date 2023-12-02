@@ -8,30 +8,28 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Build the site in the jekyll/builder container
-      run: |
-        docker run -d
-
-    - name: Checkout do código
+    - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Instalar dependências
+    - name: Build the site in the jekyll/builder container
+      run: |
+        docker run --rm \
+          --volume="$PWD:/srv/jekyll" \
+          -it jekyll/builder:latest \
+          jekyll build
+
+    - name: Install dependencies
       run: |
         npm install htmlhint -g
         npm install csslint -g
 
-    - name: Testar HTML
+    - name: Test HTML
       run: |
         htmlhint .
-        
-    - name: Testar CSS
+
+    - name: Test CSS
       run: |
         csslint .
-
-
-        
